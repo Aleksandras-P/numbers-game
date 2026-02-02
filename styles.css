@@ -151,6 +151,13 @@ button {
   h1 {
     font-size: 40px;
   }
+  h2 {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  .guess-other-number {
+    font-size: 18px;
+  }
   .container {
     margin: 0 20px;
     width: 100%;
