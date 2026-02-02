@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skaiciu spelione</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="gamePage">
+        <!-- <div class="numbers-img-box"> -->
+        <img
+          src="/imgs/numbers.png"
+          alt="image with numbers"
+          class="numbers-img"
+        />
+        <!-- </div> -->
+        <div class="game-container">
+          <div id="wrongAnswer">
+            <img
+              src="/imgs/sadFace.png"
+              alt="sad face"
+              class="wrong-answer-img"
+            />
+
+            <div class="wrong-answer-text">
+              <h2>Deja, Neatspėjote!</h2>
+              <p class="guess-other-number">
+                Spėkite <span id="higherOrLowerNumber"></span> skaičių.
+              </p>
+            </div>
+          </div>
+          <div class="game-window">
+            <h1 id="heading">Spėkite skaičių tarp 1 ir 100</h1>
+            <input type="number" placeholder="pvz., 100" id="numberInput" />
+            <p class="input-underline">įveskite skaičių nuo 1 iki 100</p>
+            <button id="submitBtn">Spėti</button>
+          </div>
+        </div>
+      </div>
+      <div id="victoryPage">
+        <div><img src="/imgs/happyFace.png" alt="happy face" /></div>
+        <h1>Atspėjote !</h1>
+        <p>
+          Atspėti jums pavyko iš <span><span id="tryCount"></span> karto</span>!
+        </p>
+        <button id="playAgainBtn">Žaisti iš naujo</button>
+      </div>
+    </div>
+  </body>
+</html>
